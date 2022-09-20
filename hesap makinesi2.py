@@ -1,31 +1,31 @@
 print("""
 
-HESAP MAKİNESİ
+Taschenrechner
 
-TOPLAMA İŞLEMİ YAPMAK İÇİN 1 'e BASIN.
-ÇIKARMA İŞLEMİ YAPMAK İÇİN 2 'e BASIN.
-ÇARPMA İŞLEMİ  YAPMAK İÇİN 3 'e BASIN.
-BÖLME İŞLEMİ   YAPMAK İÇİN 4 'e BASIN.
+DRÜCKEN SIE 1, UM EINE SAMMLUNG ZU ERSTELLEN.
+DRÜCKEN SIE 2, UM ENTFERNEN AUSZUFÜHREN.
+DRÜCKE 3, UM EINE MULTIPLIKATION DURCHZUFÜHREN.
+DRÜCKEN SIE 4, UM EINEN SPLIT ZU MACHEN.
 
 """)
 
-islem = str(input("İşlem seçiniz: "))
+prozess = str(input("aktion auswählen: "))
 
-if islem == "1":
-    sayi1 = int(input("sayi1 giriniz: "))
-    sayi2 = int(input("sayi2 giriniz: "))
-    print("Sonuç:", sayi1 + sayi2)
-elif islem == "2":
-    sayi1 = int(input("sayi1 giriniz: "))
-    sayi2 = int(input("sayi2 giriniz: "))
-    print("Sonuç:", sayi1 - sayi2)
-elif islem == "3":
-    sayi1 = int(input("sayi1 giriniz: "))
-    sayi2 = int(input("sayi2 giriniz: "))
-    print("Sonuç:", sayi1 * sayi2)
-elif islem == "4":
-    sayi1 = int(input("sayi1 giriniz: "))
-    sayi2 = int(input("sayi2 giriniz: "))
-    print("Sonuç:", sayi1/sayi2)
+if prozess == "1":
+    nummer1 = int(input("nummer1 eingeben: "))
+    nummer2 = int(input("nummer2 eingeben: "))
+    print("Fazit:", nummer1 + nummer2)
+elif prozess == "2":
+    nummer1 = int(input("nummer1 eingeben: "))
+    nummer2 = int(input("nummer2 eingeben: "))
+    print("Fazit:", nummer1 - nummer2)
+elif prozess == "3":
+    nummer1 = int(input("nummer1 eingeben: "))
+    nummer2 = int(input("nummer2 eingeben: "))
+    print("Fazit:", nummer1 * nummer2)
+elif prozess == "4":
+    nummer1 = int(input("nummer1 eingeben: "))
+    nummer2 = int(input("nummer2 eingeben: "))
+    print("Fazit:", nummer1/nummer2)
 else:
-    print("geçersiz işlem girdiniz...")
+    print("Sie haben eine ungültige Transaktion eingegeben...")
